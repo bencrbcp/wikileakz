@@ -11,13 +11,6 @@
         <img src="{{ url_for('static', filename = 'logo.png') }}" alt="WikiLeakz">
         <div class="subheading"><i>Pedro Camargo, Salvador Aleguas, and Benjamin Ruddy</i></div>
   </div>
-  <form action="{{ url_for('index') }}" method="post">
-    <input type="text" name="projectFilepath">
-    <input type="submit">
-  </form>
-  <p>{{ data.penis }}</p>
-  <svg></svg>
-
 </body>
 
   <div class="force">
@@ -53,6 +46,6 @@
 </div>
 <svg></svg>
 <script src="https://d3js.org/d3.v4.min.js"></script>
-<script src="code.js"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='code.js') }}"></script>
 </body>
 </html>
