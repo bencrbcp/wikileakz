@@ -3,7 +3,6 @@
     <title>WikiLeakz</title>
     <link rel="stylesheet" href="{{ url_for('static',filename='styles.css') }}">
     <link rel="icon" type="image/x-icon" href="{{ url_for('static',filename='favicon.ico') }}" />
-    <script src="{{ url_for('static', filename = 'code.js') }}" alt="code"></script>
 </head>
 <body>
 
@@ -69,5 +68,6 @@
 </div>
 <svg></svg>
 <script src="https://d3js.org/d3.v4.min.js"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='code.js') }}"></script>
 </body>
 </html>
