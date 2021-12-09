@@ -11,6 +11,13 @@
         <img src="{{ url_for('static', filename = 'logo.png') }}" alt="WikiLeakz">
         <div class="subheading"><i>Pedro Camargo, Salvador Aleguas, and Benjamin Ruddy</i></div>
   </div>
+  <!-- <form action="{{ url_for('index') }}" method="post">
+    <input type="text" name="projectFilepath">
+    <input type="submit">
+  </form>
+  <p>{{ data.penis }}</p> -->
+  <svg></svg>
+
 </body>
 
   <div class="force">
@@ -22,7 +29,21 @@
       and watch the magic happen as we render a dynamic, interactive graph to display the power of Wikipedia to you.</p>
   </div>
 
-  <div class="force">
+<div class="force">
+  <form action="{{ url_for('index') }}" method="post">
+    <p><label>Start page URL</label></p>
+    <input type="input" size= "48" placeholder="e.g. &quot;https://en.wikipedia.org/wiki/Monkey&quot;" name="start" id='name1' value='' required />
+    <p><label>Target page</label></p>
+    <input type="input" size= "48" placeholder="e.g. &quot;https://en.wikipedia.org/wiki/Evolution&quot;" name="end" id='name2' value='' required />
+    <br>
+    <input type="submit">
+  </form>
+  <p>Start: {{data.start}}</p>
+  <p>End: {{data.end}}</p>
+</div>
+
+
+  <!-- <div class="force">
     <p><label>Start page URL</label></p>
     <input type="input" size= "48" placeholder="e.g. &quot;https://en.wikipedia.org/wiki/Monkey&quot;" name="name" id='name' value='' required />
   </div>
@@ -30,7 +51,8 @@
   <div class="force">
     <p><label>Target page</label>(optional)</p>
     <input type="input" size= "48" placeholder="e.g. &quot;https://en.wikipedia.org/wiki/Evolution&quot;" name="name" id='name' value='' required />
-  </div>
+  </div> -->
+
 
   <div class="force">
     <p><label>Article of the day</label></p>
