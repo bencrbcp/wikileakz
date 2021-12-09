@@ -6,8 +6,10 @@ app._static_folder = "static"
 @app.route('/', methods=['GET', 'POST'])
 def index():
     data = {}
-    data2 = request.form.get('projectFilepath', '')
-    data['penis'] = str(data2)
+    start = request.form.get('start', '')
+    end = request.form.get('end', '')
+    data['start'] = start
+    data['end'] = end
     return render_template('index.html', data=data)
 
 if (__name__ == "__main__"):
