@@ -8,7 +8,7 @@ var link, node;
 var graph;
 
 // load the data
-d3.json("graph.json", function(error, _graph) {
+d3.json("static/graph.json", function(error, _graph) {
   if (error) throw error;
   graph = _graph;
   initializeDisplay();
