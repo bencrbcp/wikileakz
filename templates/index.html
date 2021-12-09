@@ -1,68 +1,51 @@
 <html>
-
 <head>
-  <link rel="stylesheet" href="{{ url_for('static',filename='styles.css') }}">
-  <link rel="icon" type="image/x-icon" href="{{ url_for('static',filename='favicon.ico') }}" />
-  <script type = "text/javascript" src="{{ url_for('static', filename = 'code.js') }}"></script>
-  <script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
-  <title>WikiLeakz</title>
+    <title>WikiLeakz</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static',filename='favicon.ico') }}" />
 </head>
-
 <body>
 
-  <div class="controls">
-    <div class="force title">
-      <img src="{{ url_for('static', filename = 'logo.png') }}" alt="WikiLeakz">
-    </div>
-
-    <div class="force">
-      <p><label>center</label> Shifts the view, so the graph is centered at this location.</p>
-      <label>
-        x
-        <output id="center_XSliderOutput">.5</output>
-        <input type="range" min="0" max="1" value=".5" step="0.01" oninput="d3.select('#center_XSliderOutput').text(value); forceProperties.center.x=value; updateAll();">
-      </label>
-      <label>
-        y
-        <output id="center_YSliderOutput">.5</output>
-        <input type="range" min="0" max="1" value=".5" step="0.01" oninput="d3.select('#center_YSliderOutput').text(value); forceProperties.center.y=value; updateAll();">
-      </label>
-    </div>
-
-    <div class="force">
-      <p><label><input type="checkbox" checked onchange="forceProperties.collide.enabled = this.checked; updateAll();"> collide</label> Prevents nodes from overlapping</p>
-      <label>
-        strength
-        <output id="collide_StrengthSliderOutput">.7</output>
-        <input type="range" min="0" max="2" value=".7" step=".1" oninput="d3.select('#collide_StrengthSliderOutput').text(value); forceProperties.collide.strength=value; updateAll();">
-      </label>
-      <label title="Size of nodes">
-        radius
-        <output id="collide_radiusSliderOutput">5</output>
-        <input type="range" min="0" max="100" value="5" step="1" oninput="d3.select('#collide_radiusSliderOutput').text(value); forceProperties.collide.radius=value; updateAll();">
-      </label>
-      <label title="Higher values increase rigidity of the nodes (WARNING: high values are computationally expensive)">
-        iterations
-        <output id="collide_iterationsSliderOutput">1</output>
-        <input type="range" min="1" max="10" value="1" step="1" oninput="d3.select('#collide_iterationsSliderOutput').text(value); forceProperties.collide.iterations=value; updateAll();">
-      </label>
-    </div>
-
-    <div class="force last">
-      <p><label><input type="checkbox" checked onchange="forceProperties.link.enabled = this.checked; updateAll();"> link</label> Sets link length</p>
-      <label title="The force will push/pull nodes to make links this long">
-        distance
-        <output id="link_DistanceSliderOutput">30</output>
-        <input type="range" min="0" max="100" value="30" step="1" oninput="d3.select('#link_DistanceSliderOutput').text(value); forceProperties.link.distance=value; updateAll();">
-      </label>
-      <label title="Higher values increase rigidity of the links (WARNING: high values are computationally expensive)">
-        iterations
-        <output id="link_IterationsSliderOutput">1</output>
-        <input type="range" min="1" max="10" value="1" step="1" oninput="d3.select('#link_IterationsSliderOutput').text(value); forceProperties.link.iterations=value; updateAll();">
-      </label>
-    </div>
+<div class="controls">
+  <div class="force title">
+        <img src="{{ url_for('static', filename = 'logo.png') }}" alt="WikiLeakz">
+        <div class="subheading"><i>Pedro Camargo, Salvador Aleguas, and Benjamin Ruddy</i></div>
   </div>
-  <svg></svg>
-</body>
 
+  <div class="force">
+    <p><label>About this project</label></p>
+    <p>Did you ever find yourself bored at school, playing the "Wiki game" by seeing how many clicks
+      it took you to navigate from one Wikipedia article to another? Are you looking to branch out from a certain
+      academic field? Having trouble finding an article on a related subject?</p>
+    <p>With WikiLeakz, we got you covered. Simply input your desired starting point, along with an optional endpoint,
+      and watch the magic happen as we render a dynamic, interactive graph to display the power of Wikipedia to you.</p>
+  </div>
+
+  <div class="force">
+    <p><label>Start page URL</label></p>
+    <input type="input" size= "48" placeholder="e.g. &quot;https://en.wikipedia.org/wiki/Monkey&quot;" name="name" id='name' value='' required />
+  </div>
+
+  <div class="force">
+    <p><label>Target page</label>(optional)</p>
+    <input type="input" size= "48" placeholder="e.g. &quot;https://en.wikipedia.org/wiki/Evolution&quot;" name="name" id='name' value='' required />
+  </div>
+  
+  <div class="force">
+    <p><label>Article of the day</label></p>
+    <img src="aotd.png" alt="The &quot;Free Speech Flag,&quot;">
+    <img src="{{ url_for('static', filename = 'article_of_the_day.png') }}" alt="WikiLeakz">
+    <br>
+    <figcaption>Pictured: The &quot;Free Speech Flag&quot;<figcaption>
+    <br>
+    <p><label>Illegal number</label></p>
+    <p>An <a href="https://en.wikipedia.org/wiki/Illegal_number">illegal number</a> is a number that represents information which is illegal to possess, utter, propagate, or otherwise transmit in some legal
+    jurisdiction. Any piece of digital information is representable as a number; consequently, if communicating a specific set of information is
+    illegal in some way, then the number may be illegal as well.</p>
+  </div>
+</div>
+<svg></svg>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="code.js"></script>
+</body>
 </html>
