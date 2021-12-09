@@ -16,7 +16,7 @@
     <input type="submit">
   </form>
   <p>{{ data.penis }}</p> -->
-  
+
   <div class="force">
     <p><label>About this project</label></p>
     <p>Did you ever find yourself bored at school, playing the "Wiki game" by seeing how many clicks
@@ -27,7 +27,7 @@
   </div>
 
 <div class="force">
-  <form action="{{ url_for('index') }}" method="post">
+  <form action="{{ url_for('handle_data') }}" method="post">
     <p><label>Start page URL</label></p>
     <input type="input" size= "48" placeholder="e.g. &quot;https://en.wikipedia.org/wiki/Monkey&quot;" name="start" id='name1' value='' required />
     <p><label>Target page</label></p>
