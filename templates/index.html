@@ -3,6 +3,7 @@
     <title>WikiLeakz</title>
     <link rel="stylesheet" href="{{ url_for('static',filename='styles.css') }}">
     <link rel="icon" type="image/x-icon" href="{{ url_for('static',filename='favicon.ico') }}" />
+    <script src="{{ url_for('static', filename = 'code.js') }}" alt="code"></script>
 </head>
 <body>
 
@@ -38,7 +39,7 @@
     <p><label>Target page</label>(optional)</p>
     <input type="input" size= "48" placeholder="e.g. &quot;https://en.wikipedia.org/wiki/Evolution&quot;" name="name" id='name' value='' required />
   </div>
-  
+
   <div class="force">
     <p><label>Article of the day</label></p>
     <img src="{{ url_for('static', filename = 'article_of_the_day.png') }}" alt="WikiLeakz">
@@ -53,6 +54,5 @@
 </div>
 <svg></svg>
 <script src="https://d3js.org/d3.v4.min.js"></script>
-<script src="code.js"></script>
 </body>
 </html>
