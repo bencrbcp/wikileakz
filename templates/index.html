@@ -11,6 +11,14 @@
         <img src="{{ url_for('static', filename = 'logo.png') }}" alt="WikiLeakz">
         <div class="subheading"><i>Pedro Camargo, Salvador Aleguas, and Benjamin Ruddy</i></div>
   </div>
+  <form action="{{ url_for('index') }}" method="post">
+    <input type="text" name="projectFilepath">
+    <input type="submit">
+  </form>
+  <p>{{ data.penis }}</p>
+  <svg></svg>
+
+</body>
 
   <div class="force">
     <p><label>About this project</label></p>
