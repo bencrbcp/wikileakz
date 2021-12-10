@@ -3,6 +3,7 @@
     <title>WikiLeakz</title>
     <link rel="stylesheet" href="{{ url_for('static',filename='styles.css') }}">
     <link rel="icon" type="image/x-icon" href="{{ url_for('static',filename='favicon.ico') }}" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
 </head>
 <body>
 
@@ -11,11 +12,6 @@
         <img src="{{ url_for('static', filename = 'logo.png') }}" alt="WikiLeakz">
         <div class="subheading"><i>Pedro Camargo, Salvador Aleguas, and Benjamin Ruddy</i></div>
   </div>
-  <!-- <form action="{{ url_for('index') }}" method="post">
-    <input type="text" name="projectFilepath">
-    <input type="submit">
-  </form>
-  <p>{{ data.penis }}</p> -->
 
   <div class="force">
     <p><label>About this project</label></p>
@@ -34,37 +30,31 @@
     <p><label>Target page</label></p>
     <input type="input" size= "48" placeholder="e.g. &quot;https://en.wikipedia.org/wiki/Evolution&quot;" name="end" id='name2' value='' required />
     <br>
-    <input type="submit">
+    <input type="submit" value="Generate Graph">
   </form>
-  <!---
-  <p>Start: {{data.start}}</p>
-  <p>End: {{data.end}}</p>
-  <p>Results: {{data.res}}</p>
-  -->
 </div>
 
 
-  <!-- <div class="force">
-    <p><label>Start page URL</label></p>
-    <input type="input" size= "48" placeholder="e.g. &quot;https://en.wikipedia.org/wiki/Monkey&quot;" name="name" id='name' value='' required />
-  </div>
-
   <div class="force">
-    <p><label>Target page</label>(optional)</p>
-    <input type="input" size= "48" placeholder="e.g. &quot;https://en.wikipedia.org/wiki/Evolution&quot;" name="name" id='name' value='' required />
-  </div> -->
+  <p><label style="margin: 0px">A few inputs to try</label></p>
+  <ul>
+    <li><p style="margin: -2px">"Rat" -> "Monkey"</p></li>
+    <li><p style="margin: -2px">"Wheat" -> "Pizza"</p></li>
+    <li><p style="margin: -2px">"Horse" -> "Evolution"</p></li>
+    <li><p style="margin: -2px">"Roblox" -> "Minecraft"</p></li>
+  </ul>
+  </div>
 
 
   <div class="force">
     <p><label>Article of the day</label></p>
-    <img src="{{ url_for('static', filename = 'article_of_the_day.png') }}" alt="WikiLeakz" style="width:200px;height:100px;">
+    <img src="{{ url_for('static', filename = 'article_of_the_day.png') }}" alt="WikiLeakz" style="width:100px;height:50px;">
     <br>
-    <figcaption>Pictured: The &quot;Free Speech Flag&quot;<figcaption>
+    <figcaption style="font-size: 8pt">Pictured: The &quot;Free Speech Flag&quot;<figcaption>
     <br>
     <p><label>Illegal number</label></p>
     <p>An <a href="https://en.wikipedia.org/wiki/Illegal_number">illegal number</a> is a number that represents information which is illegal to possess, utter, propagate, or otherwise transmit in some legal
-    jurisdiction. Any piece of digital information is representable as a number; consequently, if communicating a specific set of information is
-    illegal in some way, then the number may be illegal as well.</p>
+    jurisdiction.</p>
   </div>
 </div>
 <svg></svg>

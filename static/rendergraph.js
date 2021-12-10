@@ -136,6 +136,8 @@ function initializeDisplay() {
   // node tooltip
   node.append("title")
       .text(function(d) { return d.id; });
+
+  
   // visualize the graph
   updateDisplay();
 }

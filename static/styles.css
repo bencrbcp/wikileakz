@@ -10,6 +10,7 @@ body{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  font-family: Open Sans;
 }
 
 .titlebar{
@@ -24,12 +25,15 @@ body{
 .controls {
   flex-basis: 200px;
   padding: 0 5px;
+  border-style: solid;
 }
 .controls .force {
   background-color:rgb(255, 238, 143);
   border-radius: 3px;
   padding: 5px;
   margin: 5px 10px;
+  border-style: solid;
+  border-color: rgb(102, 0, 0);
 }
 .controls .title {
   background-color:rgb(255, 238, 143);

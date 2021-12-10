@@ -1,31 +1,41 @@
 {
     "nodes": [
         {
-            "id": "Horse"
+            "id": "Horse",
+            "group" : 1
         },
         {
-            "id": "Taxonomy_(biology)"
+            "id": "Taxonomy_(biology)",
+            "group" : 2
         },
         {
-            "id": "Evolution"
+            "id": "Evolution",
+            "group" : 3
+
         },
         {
-            "id": "Horse_(disambiguation)"
+            "id": "Horse_(disambiguation)",
+            "group" : 2
         },
         {
-            "id": "Animal"
+            "id": "Animal",
+            "group" : 2
         },
         {
-            "id": "Chordate"
+            "id": "Chordate",
+            "group" : 2
         },
         {
-            "id": "Domestication"
+            "id": "Domestication",
+            "group" : 2
         },
         {
-            "id": "Extant_taxon"
+            "id": "Extant_taxon",
+            "group" : 2
         },
         {
-            "id": "Evolution_of_the_horse"
+            "id": "Evolution_of_the_horse",
+            "group" : 2
         }
     ],
     "links": [
