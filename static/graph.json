@@ -1,41 +1,28 @@
 {
     "nodes": [
         {
-            "id": "Horse",
-            "group" : 1
+            "id": "Horse"
         },
         {
-            "id": "Taxonomy_(biology)",
-            "group" : 2
+            "id": "Taxonomy_(biology)"
         },
         {
-            "id": "Evolution",
-            "group" : 3
-
+            "id": "Evolution"
         },
         {
-            "id": "Horse_(disambiguation)",
-            "group" : 2
+            "id": "Animal"
         },
         {
-            "id": "Animal",
-            "group" : 2
+            "id": "Chordate"
         },
         {
-            "id": "Chordate",
-            "group" : 2
+            "id": "Domestication"
         },
         {
-            "id": "Domestication",
-            "group" : 2
+            "id": "Extant_taxon"
         },
         {
-            "id": "Extant_taxon",
-            "group" : 2
-        },
-        {
-            "id": "Evolution_of_the_horse",
-            "group" : 2
+            "id": "Evolution_of_the_horse"
         }
     ],
     "links": [
@@ -49,59 +36,11 @@
         },
         {
             "source": "Horse",
-            "target": "Horse_(disambiguation)"
-        },
-        {
-            "source": "Horse_(disambiguation)",
-            "target": "Horse"
-        },
-        {
-            "source": "Horse",
-            "target": "Taxonomy_(biology)"
-        },
-        {
-            "source": "Taxonomy_(biology)",
-            "target": "Evolution"
-        },
-        {
-            "source": "Horse",
             "target": "Animal"
         },
         {
             "source": "Animal",
             "target": "Evolution"
-        },
-        {
-            "source": "Horse",
-            "target": "Horse_(disambiguation)"
-        },
-        {
-            "source": "Horse_(disambiguation)",
-            "target": "Horse"
-        },
-        {
-            "source": "Horse",
-            "target": "Animal"
-        },
-        {
-            "source": "Animal",
-            "target": "Evolution"
-        },
-        {
-            "source": "Horse",
-            "target": "Chordate"
-        },
-        {
-            "source": "Chordate",
-            "target": "Evolution"
-        },
-        {
-            "source": "Horse",
-            "target": "Horse_(disambiguation)"
-        },
-        {
-            "source": "Horse_(disambiguation)",
-            "target": "Horse"
         },
         {
             "source": "Horse",
