@@ -13,7 +13,13 @@ def index():
 def handle_data():
     data = {}
     start = request.form.get('start', '')
+    print("START: ".format(start))
+    start = '/' + start.split('/', 3)[3]
+    print("START': ".format(start))
     end = request.form.get('end', '')
+    end = '/' + end.split('/', 3)[3]
+    print("END: ".format(end))
+    print("END': ".format(end))
     data['start'] = start
     data['end'] = end
     # /wiki/
@@ -34,7 +40,7 @@ def handle_data():
         for j in range(innerArrLen):
             articlePath = data['res'][i][j]
 
-            articleName = articlePath.split('/', 2)[2]
+            articleName = articlePath.split('/')[2]
             if (articleName not in articleSet):
                 articleSet.add(articleName)
                 articleLink = "https://en.wikipedia.org"+ articlePath
@@ -45,7 +51,7 @@ def handle_data():
 
             if ((j+1) < innerArrLen):
                 nextNodePath = data['res'][i][j+1]
-                nextNodeName = nextNodePath.split('/', 2)[2]
+                nextNodeName = nextNodePath.split('/')[2]
                 if (nextNodeName not in articleSet):
                     articleSet.add(nextNodeName)
                     nextNodeLink = "https://en.wikipedia.org"+ nextNodePath
