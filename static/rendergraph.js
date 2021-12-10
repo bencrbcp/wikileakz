@@ -45,7 +45,7 @@ forceProperties = {
         enabled: true,
         strength: .7,
         iterations: 1,
-        radius: 10
+        radius: 15
     },
     forceX: {
         enabled: false,
@@ -59,7 +59,7 @@ forceProperties = {
     },
     link: {
         enabled: true,
-        distance: 30,
+        distance: 100,
         iterations: 1
     }
 }

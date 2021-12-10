@@ -21,13 +21,13 @@ body{
   padding: 0 5px;
 }
 .controls .force {
-  background-color:rgb(229, 255, 143);
+  background-color:rgb(255, 238, 143);
   border-radius: 3px;
   padding: 5px;
   margin: 5px 10px;
 }
 .controls .title {
-  background-color:rgb(229, 255, 143);
+  background-color:rgb(255, 238, 143);
   border-radius: 3px;
   padding: 10px;
   margin: 10px 10px;
