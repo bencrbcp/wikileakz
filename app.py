@@ -18,12 +18,11 @@ def handle_data():
     data['end'] = end
     # /wiki/
     if start[0:6] == "/wiki/":
-        w = WikipediaNav(maxt=10)
+        w = WikipediaNav(maxt=25)
         res = w.searchAllFast(start, end)
         data['res'] = res
 
-    print("0TH ELEMENT OF DATA['RES']: ")
-    print(data['res'][0])
+    # BEGIN PARSING TO WRITE JSON FILE
     jsonDict = {}
     articleSet = set()
     jsonDict['nodes'] = []
