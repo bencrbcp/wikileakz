@@ -1,13 +1,25 @@
 {
     "nodes": [
         {
-            "id": "Horse"
+            "id": "Monkey"
         },
         {
-            "id": "Taxonomy_(biology)"
+            "id": "Carboniferous"
         },
         {
             "id": "Evolution"
+        },
+        {
+            "id": "Bonnet_macaque"
+        },
+        {
+            "id": "Vulnerable_species"
+        },
+        {
+            "id": "Reproduction"
+        },
+        {
+            "id": "Taxonomy_(biology)"
         },
         {
             "id": "Animal"
@@ -16,18 +28,36 @@
             "id": "Chordate"
         },
         {
-            "id": "Domestication"
-        },
-        {
-            "id": "Extant_taxon"
-        },
-        {
-            "id": "Evolution_of_the_horse"
+            "id": "Hybrid_(biology)"
         }
     ],
     "links": [
         {
-            "source": "Horse",
+            "source": "Monkey",
+            "target": "Carboniferous"
+        },
+        {
+            "source": "Carboniferous",
+            "target": "Evolution"
+        },
+        {
+            "source": "Monkey",
+            "target": "Bonnet_macaque"
+        },
+        {
+            "source": "Bonnet_macaque",
+            "target": "Vulnerable_species"
+        },
+        {
+            "source": "Vulnerable_species",
+            "target": "Reproduction"
+        },
+        {
+            "source": "Reproduction",
+            "target": "Evolution"
+        },
+        {
+            "source": "Monkey",
             "target": "Taxonomy_(biology)"
         },
         {
@@ -35,7 +65,7 @@
             "target": "Evolution"
         },
         {
-            "source": "Horse",
+            "source": "Monkey",
             "target": "Animal"
         },
         {
@@ -43,7 +73,7 @@
             "target": "Evolution"
         },
         {
-            "source": "Horse",
+            "source": "Monkey",
             "target": "Chordate"
         },
         {
@@ -51,27 +81,19 @@
             "target": "Evolution"
         },
         {
-            "source": "Horse",
-            "target": "Domestication"
+            "source": "Monkey",
+            "target": "Bonnet_macaque"
         },
         {
-            "source": "Domestication",
-            "target": "Evolution"
+            "source": "Bonnet_macaque",
+            "target": "Vulnerable_species"
         },
         {
-            "source": "Horse",
-            "target": "Extant_taxon"
+            "source": "Vulnerable_species",
+            "target": "Hybrid_(biology)"
         },
         {
-            "source": "Extant_taxon",
-            "target": "Evolution"
-        },
-        {
-            "source": "Horse",
-            "target": "Evolution_of_the_horse"
-        },
-        {
-            "source": "Evolution_of_the_horse",
+            "source": "Hybrid_(biology)",
             "target": "Evolution"
         }
     ]
