@@ -4,4 +4,6 @@ Introducing, a hyper-revolutionary state of the art machine-learning, crypto blo
 
 Try it for yourself at https://wikileakz.herokuapp.com.
 
+Demo available at https://www.youtube.com/watch?v=DAyZ8hujJFY
+
 Licensed under GPL v3.0
